@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>User Management</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        #pagination-controls {
+            margin: 20px;
+            text-align: center;
+        }
+        input {
+            padding: 0 5px;
+            height: 40px;
+            margin: 15px 0 0 10px;
+            border-radius: 10px;
+        }
+      
+    </style>
+  </head>
+  <body>
+    <input class=""
+      type="text"
+      id="search-input"
+      placeholder="Search by name or email"
+    />
+    <table class="table table-striped table-bordered mt-4">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Job</th>
+          <th>Company</th>
+          <th>Age</th>
+          <th>Retired</th>
+        </tr>
+      </thead>
+      <tbody id="user-table-body">
+        <!-- Data will be populated here -->
+      </tbody>
+    </table>
+    <div id="pagination-controls">
+      <button id="previous-button" class="btn btn-secondary btn-sm">Previous</button>
+      <span id="pagination-info">Page 1 of N</span>
+      <button id="next-button" class="btn btn-primary btn-sm">Next</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
